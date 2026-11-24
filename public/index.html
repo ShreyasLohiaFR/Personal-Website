@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shreyas Prakash Lohia — computer science undergraduate at NIT Warangal. Selected software engineering projects, systems and full-stack development.">
+  <meta name="theme-color" content="#101713">
+  <title>Shreyas Prakash Lohia — Software Engineering</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="site.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Shreyas Lohia home"><span class="monogram">sl<span>.</span></span><span class="wordmark-text">Shreyas Lohia<small>Software engineering</small></span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a><a class="resume-link" href="resume.html">Résumé <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="intro">
+      <div class="hero-copy">
+        <div class="kicker"><span class="availability-dot"></span> AVAILABLE · SUMMER 2027</div>
+        <h1 id="intro">Shreyas<br>Prakash <em>Lohia.</em></h1>
+        <p class="hero-sub">I’m a computer science undergraduate interested in the systems behind good software — reliable backends, distributed computing, and useful interfaces.</p>
+        <div class="hero-actions"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="button quiet" href="https://www.linkedin.com/in/shreyas-prakash-lohia/">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-meta"><span>NIT Warangal · B.Tech CSE</span><span>Expected graduation 2028</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-head"><span>FIG. 01</span><span>SYSTEM / SIGNAL</span></div>
+        <svg viewBox="0 0 470 425" xmlns="http://www.w3.org/2000/svg">
+          <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#bccab4" stroke-opacity=".10" fill="none"/></pattern><radialGradient id="glow"><stop stop-color="#91cc96" stop-opacity=".18"/><stop offset="1" stop-color="#91cc96" stop-opacity="0"/></radialGradient></defs>
+          <rect x="0" y="0" width="470" height="425" fill="url(#grid)"/><circle cx="245" cy="205" r="204" fill="url(#glow)"/>
+          <g stroke="#779980" stroke-width="1" fill="none"><ellipse cx="240" cy="205" rx="171" ry="111" transform="rotate(-28 240 205)"/><ellipse cx="240" cy="205" rx="171" ry="111" transform="rotate(28 240 205)"/><circle cx="240" cy="205" r="140" stroke-dasharray="2 9"/><path d="M0 205H470M240 0V425" stroke-dasharray="3 9" opacity=".45"/><path d="M100 105L240 205 380 105M100 305L240 205 380 305M240 205L240 49M240 205V365" stroke="#a7d8a5" stroke-opacity=".64"/></g>
+          <g fill="#16221a" stroke="#bad8ad"><rect x="190" y="166" width="100" height="78" rx="3"/><rect x="62" y="89" width="76" height="32" rx="2"/><rect x="342" y="89" width="76" height="32" rx="2"/><rect x="62" y="289" width="76" height="32" rx="2"/><rect x="342" y="289" width="76" height="32" rx="2"/><circle cx="240" cy="49" r="6"/><circle cx="240" cy="365" r="6"/></g>
+          <g fill="#c9e7bb" text-anchor="middle" font-family="monospace" font-size="10"><text x="100" y="109">API</text><text x="380" y="109">QUEUE</text><text x="100" y="309">DATA</text><text x="380" y="309">WORKER</text><text x="240" y="197" font-size="18" font-weight="bold">sl.</text><text x="240" y="219" font-size="9" letter-spacing="2">ENGINEERING</text></g>
+          <g fill="#d0edba"><circle class="signal" cx="100" cy="105" r="3"/><circle class="signal signal-delay" cx="380" cy="305" r="3"/><circle cx="240" cy="49" r="2"/><circle cx="240" cy="365" r="2"/></g>
+          <g stroke="#c9e7bb" opacity=".6"><path d="M12 12h13M12 12v13M458 12h-13M458 12v13M12 413h13M12 413v-13M458 413h-13M458 413v-13"/></g>
+        </svg>
+        <div class="art-foot"><span>BUILD / TEST / REFINE</span><span>001 — 2026</span></div>
+      </div>
+    </section>
+
+    <section id="work" class="shell work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="kicker">01 / SELECTED WORK</p><h2 id="work-title">Projects with<br><em>engineering depth.</em></h2></div><p>Two complementary builds: a distributed execution system and a full-stack application.</p></div>
+      <article class="project reveal">
+        <div class="project-copy">
+          <div class="project-index">01 <span> / </span> SYSTEMS &amp; ML</div>
+          <h3>Nexus</h3>
+          <p class="project-lead">Distributed task execution and ML inference</p>
+          <p>A self-hosted Java platform with a PostgreSQL-backed priority queue, concurrent workers, retries, lease-based crash recovery and a Python digit-classification service.</p>
+          <div class="metrics"><div><strong>2,000</strong><span>benchmark jobs completed</span></div><div><strong>0</strong><span>failed benchmark jobs</span></div><div><strong>97.78%</strong><span>held-out model accuracy</span></div></div>
+          <p class="evidence">Measured in GitHub Actions on Nov 24, 2026, across two 1,000-job configurations. Model accuracy is on the held-out digits dataset, not general handwriting.</p>
+          <ul class="stack"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>FastAPI</li><li>Docker</li></ul>
+          <div class="project-links"><a href="https://github.com/ShreyasLohiaFR/Nexus-Distributed-Task-Execution-ML-Inference-Platform">Source code ↗</a><a href="https://github.com/ShreyasLohiaFR/Nexus-Distributed-Task-Execution-ML-Inference-Platform/actions/runs/45387632217">Verified CI &amp; benchmarks ↗</a></div>
+        </div>
+        <div class="project-visual nexus-visual" role="img" aria-label="Nexus architectural diagram. Browser and API submit to PostgreSQL queue; concurrent workers claim jobs; a Python service handles digit inference.">
+          <div class="visual-top"><span>NEXUS / ARCHITECTURE</span><span>SCHEMATIC</span></div>
+          <svg viewBox="0 0 540 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0L6 3 0 6" fill="none" stroke="#a9c7df"/></marker><pattern id="nxgrid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#a9c7df" opacity=".08" fill="none"/></pattern></defs>
+            <rect width="540" height="350" fill="url(#nxgrid)"/>
+            <g stroke="#a9c7df" stroke-width="1.5" fill="none" marker-end="url(#arrow)"><path d="M150 78H220"/><path d="M315 106V145"/><path d="M268 204V239"/><path d="M315 204V221H407V239"/><path d="M200 270H137"/></g>
+            <g fill="#172837" stroke="#597c99"><rect x="30" y="50" width="120" height="56" rx="5"/><rect x="220" y="50" width="190" height="56" rx="5"/><rect x="210" y="145" width="210" height="59" rx="5"/><rect x="200" y="239" width="135" height="62" rx="5"/><rect x="350" y="239" width="115" height="62" rx="5"/><rect x="15" y="239" width="122" height="62" rx="5"/></g>
+            <g fill="#e3eaf0" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14"><text x="90" y="82">Console</text><text x="315" y="74">Spring Boot API</text><text x="315" y="91" fill="#9bb3c4" font-size="10">auth · validation · submit</text><text x="315" y="170">PostgreSQL queue</text><text x="315" y="189" font-size="10" fill="#9bb3c4">priority · leases · results</text><text x="267" y="266">Worker 01</text><text x="267" y="283" fill="#9bb3c4" font-size="10">concurrent execution</text><text x="407" y="266">Worker 02</text><text x="407" y="283" fill="#9bb3c4" font-size="10">parallel claims</text><text x="76" y="265">Python ML</text><text x="76" y="282" font-size="10" fill="#9bb3c4">digit inference</text></g>
+          </svg>
+          <div class="visual-bottom"><span class="tiny-dot"></span> CI-verified browser &amp; crash recovery <a href="https://github.com/ShreyasLohiaFR/Nexus-Distributed-Task-Execution-ML-Inference-Platform/actions/runs/45387632217" aria-label="Open Nexus verification">↗</a></div>
+        </div>
+      </article>
+      <article class="project reveal">
+        <div class="project-copy">
+          <div class="project-index">02 <span> / </span> FULL-STACK</div>
+          <h3>FinTrack</h3>
+          <p class="project-lead">Personal finance tracking</p>
+          <p>A deployed MERN application for recording transactions, monitoring monthly budgets and exploring spending patterns, with authenticated, account-scoped REST APIs.</p>
+          <p>Filtering, pagination, CSV export and data aggregation support a practical workflow from transaction entry to analysis.</p>
+          <ul class="stack"><li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Render</li></ul>
+          <div class="project-links"><a href="https://fintrack-tn0w.onrender.com/">Live application ↗</a><a href="https://github.com/ShreyasLohiaFR/Fintrack">Source code ↗</a></div>
+        </div>
+        <div class="project-visual finance-visual" role="img" aria-label="FinTrack workflow schematic, not real financial data: record transactions, aggregate data, analyze budgets.">
+          <div class="visual-top"><span>FINTRACK / DATA FLOW</span><span>SCHEMATIC</span></div>
+          <svg viewBox="0 0 540 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><pattern id="ftgrid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#e3bd86" opacity=".07" fill="none"/></pattern></defs><rect width="540" height="350" fill="url(#ftgrid)"/>
+            <g fill="#2b241b" stroke="#8b7659"><rect x="34" y="56" width="472" height="242" rx="7"/><path d="M34 91H506M186 91V298"/><rect x="205" y="112" width="280" height="81" rx="4"/><rect x="205" y="209" width="280" height="70" rx="4"/></g>
+            <g fill="#f0d4aa" font-family="system-ui,sans-serif"><text x="51" y="79" font-size="12" font-weight="700">FinTrack</text><text x="50" y="119" font-size="12">01 / Record</text><text x="50" y="157" font-size="12">02 / Categorize</text><text x="50" y="195" font-size="12">03 / Analyze</text><text x="50" y="233" font-size="12">04 / Export</text><text x="220" y="132" font-size="10" letter-spacing="1">BUDGET PROGRESS</text><text x="220" y="229" font-size="10" letter-spacing="1">TRANSACTION HISTORY</text></g>
+            <g fill="#bfa273"><rect x="220" y="145" width="160" height="7" rx="3"/><rect x="220" y="161" width="104" height="7" rx="3"/><rect x="220" y="177" width="208" height="7" rx="3"/></g>
+            <g stroke="#a99370" stroke-width="3" stroke-linecap="round"><path d="M222 244H365M414 244H467M222 258H335M423 258H467M222 271H385M405 271H467"/></g>
+            <g fill="#f0d4aa"><circle cx="480" cy="73" r="3"/><circle cx="469" cy="73" r="3"/><circle cx="458" cy="73" r="3"/></g>
+          </svg>
+          <div class="visual-bottom"><span class="tiny-dot"></span> Live deployment <a href="https://fintrack-tn0w.onrender.com/" aria-label="Open live FinTrack application">↗</a></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="about" class="shell about reveal" aria-labelledby="about-title">
+      <div><p class="kicker">02 / BACKGROUND</p><h2 id="about-title">Learning by<br><em>building.</em></h2><p class="about-text">I study Computer Science and Engineering at the National Institute of Technology Warangal. My interests sit at the intersection of backend engineering, distributed systems and full-stack development. I’m looking for a Summer 2027 software engineering internship where I can learn from experienced engineers and contribute to real products.</p></div>
+      <div class="about-details">
+        <div class="detail"><span>EDUCATION</span><h3>NIT Warangal</h3><p>B.Tech · Computer Science &amp; Engineering<br>Expected graduation: 2028</p></div>
+        <div class="detail"><span>LANGUAGES</span><p>C++ · Java · Python · JavaScript · SQL</p></div>
+        <div class="detail"><span>FRAMEWORKS &amp; TOOLS</span><p>Spring Boot · FastAPI · React · Node.js · Express · PostgreSQL · MongoDB · MySQL · Docker · Git · GitHub Actions</p></div>
+        <div class="detail"><span>CORE COURSEWORK</span><p>Data structures and algorithms · Operating systems · Databases · Computer networks · Distributed computing · Software testing</p></div>
+      </div>
+    </section>
+    <section id="contact" class="shell contact reveal"><p class="kicker">03 / LET’S CONNECT</p><h2>Let’s build<br><em>something useful.</em></h2><p>Open to Summer 2027 software engineering opportunities.</p><div class="contact-links"><a href="https://www.linkedin.com/in/shreyas-prakash-lohia/">LinkedIn ↗</a><a href="https://github.com/ShreyasLohiaFR">GitHub ↗</a><a href="https://leetcode.com/u/Shreyas_Lohia/">LeetCode ↗</a><a href="resume.html">View résumé ↗</a></div></section>
+  </main>
+  <footer class="shell footer"><span>© <span id="year">2026</span> Shreyas Prakash Lohia</span><span>Designed to be read. Built to be maintained.</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
