@@ -16,3 +16,19 @@ for (const file of ["index.html", "resume.html"]) {
   assert.ok(!html.includes("javascript:"));
 }
 console.log("Portfolio checks passed: local navigation, assets and required metadata.");
+
+// External destinations must preserve the portfolio tab and isolate window.opener.
+for (const file of ["index.html", "resume.html"]) {
+  const html = readFileSync(resolve(root, file), "utf8");
+  for (const [tag] of html.matchAll(/<a\b[^>]*>/gi)) {
+    const href = tag.match(/\bhref\s*=\s*["']([^"']+)["']/i)?.[1];
+    if (!href) continue;
+    if (/^https?:\/\//i.test(href) && new URL(href).hostname !== "shreyas-lohia-portfolio.onrender.com") {
+      assert.match(tag, /\btarget="_blank"/, file + ": external link must open in a new tab: " + href);
+      assert.match(tag, /\brel="noopener noreferrer"/, file + ": external link isolation: " + href);
+    } else {
+      assert.doesNotMatch(tag, /\btarget="_blank"/, file + ": internal link should stay in the same tab: " + href);
+    }
+  }
+}
+console.log("External link behavior checks passed.");
