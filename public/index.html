@@ -50,10 +50,10 @@
           <h3>Nexus</h3>
           <p class="project-lead">Distributed task execution and ML inference</p>
           <p>A self-hosted Java platform with a PostgreSQL-backed priority queue, concurrent workers, retries, lease-based crash recovery and a Python digit-classification service.</p>
-          <div class="metrics"><div><strong>2,000</strong><span>benchmark jobs completed</span></div><div><strong>0</strong><span>failed benchmark jobs</span></div><div><strong>97.78%</strong><span>held-out model accuracy</span></div></div>
+          <div class="metrics"><div><strong>9,000</strong><span>benchmark jobs completed</span></div><div><strong>0</strong><span>failed benchmark jobs</span></div><div><strong>97.78%</strong><span>held-out model accuracy</span></div></div>
           <p class="evidence">Measured in GitHub Actions on Nov 24, 2026, across two 1,000-job configurations. Model accuracy is on the held-out digits dataset, not general handwriting.</p>
           <ul class="stack"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>FastAPI</li><li>Docker</li></ul>
-          <div class="project-links"><a href="https://github.com/ShreyasLohiaFR/Nexus-Distributed-Task-Execution-ML-Inference-Platform" target="_blank" rel="noopener noreferrer">Source code ↗</a><a href="https://github.com/ShreyasLohiaFR/Nexus-Distributed-Task-Execution-ML-Inference-Platform/actions/runs/45387632217" target="_blank" rel="noopener noreferrer">Verified CI &amp; benchmarks ↗</a></div>
+          <div class="project-links"><a href="https://github.com/ShreyasLohiaFR/Nexus-Distributed-Task-Execution-ML-Inference-Platform" target="_blank" rel="noopener noreferrer">Source code ↗</a><a href="https://github.com/ShreyasLohiaFR/Nexus-Distributed-Task-Execution-ML-Inference-Platform/actions/runs/45570285078" target="_blank" rel="noopener noreferrer">Verified CI &amp; benchmarks ↗</a></div>
         </div>
         <div class="project-visual nexus-visual" role="img" aria-label="Nexus architectural diagram. Browser and API submit to PostgreSQL queue; concurrent workers claim jobs; a Python service handles digit inference.">
           <div class="visual-top"><span>NEXUS / ARCHITECTURE</span><span>SCHEMATIC</span></div>
@@ -64,7 +64,7 @@
             <g fill="#172837" stroke="#597c99"><rect x="30" y="50" width="120" height="56" rx="5"/><rect x="220" y="50" width="190" height="56" rx="5"/><rect x="210" y="145" width="210" height="59" rx="5"/><rect x="200" y="239" width="135" height="62" rx="5"/><rect x="350" y="239" width="115" height="62" rx="5"/><rect x="15" y="239" width="122" height="62" rx="5"/></g>
             <g fill="#e3eaf0" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14"><text x="90" y="82">Console</text><text x="315" y="74">Spring Boot API</text><text x="315" y="91" fill="#9bb3c4" font-size="10">auth · validation · submit</text><text x="315" y="170">PostgreSQL queue</text><text x="315" y="189" font-size="10" fill="#9bb3c4">priority · leases · results</text><text x="267" y="266">Worker 01</text><text x="267" y="283" fill="#9bb3c4" font-size="10">concurrent execution</text><text x="407" y="266">Worker 02</text><text x="407" y="283" fill="#9bb3c4" font-size="10">parallel claims</text><text x="76" y="265">Python ML</text><text x="76" y="282" font-size="10" fill="#9bb3c4">digit inference</text></g>
           </svg>
-          <div class="visual-bottom"><span class="tiny-dot"></span> CI-verified browser &amp; crash recovery <a href="https://github.com/ShreyasLohiaFR/Nexus-Distributed-Task-Execution-ML-Inference-Platform/actions/runs/45387632217" aria-label="Open Nexus verification" target="_blank" rel="noopener noreferrer">↗</a></div>
+          <div class="visual-bottom"><span class="tiny-dot"></span> CI-verified browser &amp; crash recovery <a href="https://github.com/ShreyasLohiaFR/Nexus-Distributed-Task-Execution-ML-Inference-Platform/actions/runs/45570285078" aria-label="Open Nexus verification" target="_blank" rel="noopener noreferrer">↗</a></div>
         </div>
       </article>
       <article class="project reveal">
